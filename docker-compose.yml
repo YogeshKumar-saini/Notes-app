@@ -1,4 +1,4 @@
-version: "3.8"
+# version: "3.8"
 
 # services:
 #   nginx:
@@ -59,8 +59,12 @@ version: "3.8"
 
 
 # ____________________________________
+
+version: "3.8"
 services:
-  web:
+  notes-app:
     image: yogesh1090/22bcd0052-notes-app:latest
+    container_name: notes-app
     ports:
       - "8000:8000"
+    restart: always
